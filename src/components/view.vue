@@ -107,7 +107,7 @@
           name: self.name,
           url: self.url,
           dynamicNavbar: propsData.dynamicNavbar,
-          domCache: typeof propsData.domCache === 'undefined' ? true : propsData.domCache,
+          domCache: typeof propsData.domCache === 'undefined' ? true : (propsData.domCache === 'true'),
           linksView: propsData.linksView,
           reloadPages: propsData.reloadPages,
           uniqueHistory: propsData.uniqueHistory,
